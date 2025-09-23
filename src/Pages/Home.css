@@ -1,0 +1,130 @@
+.hero-sec {
+  /* position: sticky;
+  top: 0; */
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+
+
+.outlet-sec {
+  margin-top: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hero-content {
+  /* background-color: lightblue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.hero-title {
+  /* background-color: lightcoral; */
+  width: 100%;
+  text-align: center;
+}
+
+.hero-title h1 {
+  font-size: clamp(0.8rem, 2vw + 1.5rem, 5rem);
+  font-weight: 400;
+}
+
+.hero-title p {
+  font-size: clamp(1rem, 1vw + 0.8rem, 3rem);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.profile-component {
+  display: block;
+  width: 100%;
+  max-width: 470px;
+  height: 350px;
+  /* height: 100%; */
+  /* max-height: 470px; */
+  padding: 1rem;
+  /* background-color: lightblue; */
+  margin: 0 auto;
+}
+
+.cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* background-color: lightgreen; */
+}
+
+.cta button {
+  /* width: 8rem;
+  height: 2.5rem; */
+  width: 8em;
+  height: 2em;
+  border: none;
+  outline: none;
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1.25rem);
+  /* font-size: 1rem; */
+  /* background-color:#4caf50; */
+  background-color:#1E293B;
+  cursor: pointer;
+  color: #fff;
+}
+
+.cv-btn-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media screen and (min-width:418px) and (max-width:768px) {
+  .profile-component {
+    height: 500px;
+  }
+}
+
+
+@media screen and (min-width:769px) {
+  .profile-component {
+    display: none;
+  }
+
+  .hero-sec {
+    /* position: sticky;
+    top: 0; */
+    width: 100%;
+    /* height: 100vh; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
+    /* background-color: pink; */
+  }
+
+  .hero-content {
+    gap: 4rem;
+  }
+
+  .hero-title {
+    margin-top: 5rem;
+  }
+
+  .outlet-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+}

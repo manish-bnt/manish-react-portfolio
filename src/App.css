@@ -1,0 +1,67 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #1E293B;
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow-y: hidden; */
+  padding: 1rem;
+  z-index: 99999;
+}
+
+.menu-bar {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.profile-comp-app {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 60px;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  /* background-color: antiquewhite; */
+}
+
+
+@media screen and (min-width: 769px) {
+  .content {
+    width: 60%;
+    min-height: 100vh;
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    align-items: normal;
+    transition: margin-left 0.4s ease-out;
+  }
+
+  .profile-comp-app {
+    display: block;
+  }
+
+}

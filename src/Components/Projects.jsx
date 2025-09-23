@@ -8,7 +8,7 @@ export default function Projects() {
       title: "Todo App",
       desc: "A simple todo list app with local storage support.",
       tech: ['HTML' , 'CSS' , 'Javascript' , 'React'],
-      demo: 'https://reacttodolisttracker.netlify.app/'
+      demo: 'https://react-todotracker.netlify.app/'
     },
     {
       img: "/projectImg/portfolio-screenshot.png",

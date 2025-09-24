@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import portfolioLogo from "./assets/Portfolio-logo-img.png";
+import portfolioLogo from "./assets/portfolio-logo-img.png";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { NavContext } from "./Context/NavContext";
@@ -13,7 +13,7 @@ import Contact from "./Pages/Contact";
 
 function App() {
   const { menu, menuHandler } = useContext(NavContext);
-  
+
   return (
     <>
       <header>

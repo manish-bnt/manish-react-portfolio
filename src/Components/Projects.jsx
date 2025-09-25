@@ -1,14 +1,14 @@
 import React from "react";
 import "../Components/Projects.css";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 export default function Projects() {
   const projects = [
     {
       img: "/projectImg/todo-img.png",
       title: "Todo App",
       desc: "A simple todo list app with local storage support.",
-      tech: ['HTML' , 'CSS' , 'Javascript' , 'React'],
-      demo: 'https://react-todotracker.netlify.app/'
+      tech: ["HTML", "CSS", "Javascript", "React"],
+      demo: "https://react-todotracker.netlify.app/",
     },
     {
       img: "/projectImg/portfolio-screenshot.png",
@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Portfolio Website2",
       desc: "My personal portfolio showcasing skills, projects, and contact info.",
       tech: ["HTML", "CSS", "Javascript", "React"],
-      demo: "https://manishbasnetportfolio.netlify.app/",
+      demo: "https://manish-basnet-portfolio.netlify.app/",
     },
   ];
   return (
@@ -36,7 +36,9 @@ export default function Projects() {
             <p>{project.desc}</p>
             <p className="tech">{`${project.tech}`}</p>
             <div className="buttons">
-              <Link className="link" to={project.demo}>Live Demo</Link>
+              <Link className="link" to={project.demo}>
+                Live Demo
+              </Link>
             </div>
           </div>
         ))}
